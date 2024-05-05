@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
+  <div class="container-fluid">
+    <a class="navbar-brand ms-2" >
+      <img src="../../assets/womenDress/logo1.webp" alt="Logo" width="100" height="60" class="d-inline-block align-text-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a (click)=" onItemClick('app-home-photo-gallery')"   routerLink="" class="nav-link active" aria-current="page">Home</a>
+        </li>
+        <li class="nav-item">
+          <a (click)=" onItemClick('app-home-alt')" routerLink=""  class="nav-link active" aria-current="page" >HOME ALT</a>
+        </li>
+        <li class="nav-item">
+          <a (click)=" onItemClick('app-store')"  routerLink="SecondNavbar" class="nav-link active" aria-current="page" >STORE</a>
+        </li>
+        <li class="nav-item">
+          <a (click)=" onItemClick('app-new-arrivals')" routerLink="SecondNavbar" class="nav-link active" aria-current="page" >NEW ARRIVALS</a>
+        </li>
+        <li class="nav-item">
+          <a (click)=" onItemClick('app-look-book')" routerLink="SecondNavbar" class="nav-link active" aria-current="page" href="#">LOOKBOOK</a>
+        </li>
+        <li class="nav-item">
+          <a (click)=" onItemClick('app-journal')" routerLink="SecondNavbar"  class="nav-link active" aria-current="page" href="#">JOURNAL</a>
+        </li>
+      </ul>
+      <div class="d-flex">
+        <div class="nav-item "  style="font-size: 20px; margin-left: 90px">
+         <a (click)="toggleSidebar()" > <i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        <div class="nav-item ms-5"  style="font-size: 20px;">
+          <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+        <div class="nav-item ms-2 me-4"  style="font-size: 20px;">
+          <i class="fa-regular fa-eye"></i>
+        </div>
+        <div>
+          <p>ACCOUNT</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<app-store *ngIf="componentToShow === 'app-store'"></app-store>
+<app-new-arrivals *ngIf="componentToShow === 'app-new-arrivals'"></app-new-arrivals>
+<app-look-book  *ngIf="componentToShow === 'app-look-book'"></app-look-book>
+<app-journal  *ngIf="componentToShow === 'app-journal'"></app-journal>
+<app-search-component (searchbarClicked)="closeSidebar()"  class="abc" [ngClass]="{ 'active': isSidebarVisible }"></app-search-component>
+<!--<app-footer></app-footer>-->
+

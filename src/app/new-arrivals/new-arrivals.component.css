@@ -1,0 +1,24 @@
+.Arrival{
+  color: black;
+  font-size: 70px;
+  font-weight: bold;
+  padding-top: 120px;
+  padding-left: 50px;
+}
+.outerDiv{
+  height: 260px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.inputfield{
+  display: flex;
+  padding: 8px;
+  justify-content: space-between;
+  border: none; /* Remove default border */
+  border-bottom: 2px solid lightgray; /* Add bottom border */
+  outline: none;
+}
+.inputfield p {
+  margin: 0; /* Remove default margin */
+}

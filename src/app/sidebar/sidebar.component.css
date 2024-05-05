@@ -1,0 +1,137 @@
+/*!*.slide{*!*/
+/*!*  height:100%;*!*/
+/*!*  width: 180px;*!*/
+/*!*  position: absolute;*!*/
+/*!*  background-color: cornflowerblue;*!*/
+/*!*  transition: 0.5s ease;*!*/
+/*!*  transform: translateX(185px);*!*/
+/*!*}*!*/
+/*!*ul li{*!*/
+/*!*  list-style: none;*!*/
+/*!*}*!*/
+
+/*!*ul li a{*!*/
+/*!*  color: dimgray;*!*/
+/*!*  font-weight: 500;*!*/
+/*!*  padding: 5px 0;*!*/
+/*!*  display: block;*!*/
+/*!*  text-transform: capitalize;*!*/
+/*!*  text-decoration: none;*!*/
+/*!*  transition: 0.2s ease-out;*!*/
+/*!*}*!*/
+/*!*input{*!*/
+/*!*  display: none;*!*/
+/*!*  visibility: hidden;*!*/
+/*!*  -webkit-appearance: none;*!*/
+/*!*}*!*/
+/*!*.toggle{*!*/
+/*!*  position: absolute;*!*/
+/*!*  height: 30px;*!*/
+/*!*  width: 30px;*!*/
+/*!*  top: 20px;*!*/
+/*!*  left: 15px;*!*/
+/*!*  z-index: 1;*!*/
+/*!*  cursor: pointer;*!*/
+/*!*  border-radius: 2px;*!*/
+/*!*  background-color: #fff;*!*/
+/*!*  box-shadow: 0 0 10px rgba(0,0,0,0.3);*!*/
+/*!*}*!*/
+/*!*.toggle .common{*!*/
+/*!*  position : absolute;*!*/
+/*!*  height: 2px;*!*/
+/*!*  width: 20px;*!*/
+/*!*  background-color: navy;*!*/
+/*!*  border-radius: 50px;*!*/
+/*!*  transition: 0.3s ease;*!*/
+/*!*}*!*/
+/*!*.toggle .top_line{*!*/
+/*!*  top:30%;*!*/
+/*!*  left: 50%;*!*/
+/*!*  transform: translate(-50%, -50%);*!*/
+/*!*}*!*/
+/*!*.toggle .middle_line{*!*/
+/*!*  top: 50%;*!*/
+/*!*  left: 50%;*!*/
+/*!*  transform: translate(-50%, -50%);*!*/
+/*!*}*!*/
+
+/*!*.toggle .bottom_line{*!*/
+/*!*  top: 70%;*!*/
+/*!*  left: 50%;*!*/
+/*!*  transform: translate(-50%, -50%);*!*/
+/*!*}*!*/
+/*!*input:checked ~ .slide{*!*/
+/*!*  transform: translateX(0);*!*/
+
+/*!*}*!*/
+/*!* sidebar.component.css *!*/
+/*.slide {*/
+/*  height: 100%;*/
+/*  width: 180px;*/
+/*  position: fixed;*/
+/*  top: 0;*/
+/*  left: -80px;*/
+/*  background-color: cornflowerblue;*/
+/*  transition: transform 0.5s ease;*/
+/*}*/
+
+/*.slide.open {*/
+/*  transform: translateX(0);*/
+/*}*/
+
+/*ul li {*/
+/*  list-style: none;*/
+/*}*/
+
+/*ul li a {*/
+/*  color: dimgray;*/
+/*  font-weight: 500;*/
+/*  padding: 5px 0;*/
+/*  display: block;*/
+/*  text-transform: capitalize;*/
+/*  text-decoration: none;*/
+/*  transition: 0.2s ease-out;*/
+/*}*/
+
+/*a.btn {*/
+/*  position: absolute;*/
+/*  top: 20px;*/
+/*  left: 15px;*/
+/*  z-index: 1;*/
+/*  cursor: pointer;*/
+/*}*/
+
+/*.fa-bars {*/
+/*  font-size: 20px;*/
+/*}*/
+
+
+.sidebar{
+  padding: 15px;
+  height: 100vh;
+  width:370px;
+  background-color: whitesmoke;
+  color:white;
+}
+
+.sidebar-menu {
+  list-style: none; /* Remove default list styles */
+  padding-top: 20px; /* Remove default padding */
+  padding-right: 0px !important;
+}
+
+.sidebar-menu li {
+  margin-bottom: 15px; /* Equal distance between list items */
+}
+
+.sidebar-menu li a {
+  color: #333; /* Text color */
+   /* Bold text */
+  text-decoration: none; /* Remove underline */
+  /*padding: 5px; !* Add padding *!*/
+  display: block; /* Make the whole area clickable */
+}
+
+.sidebar-menu li a:hover {
+  background-color: #f0f0f0; /* Hover background color */
+}

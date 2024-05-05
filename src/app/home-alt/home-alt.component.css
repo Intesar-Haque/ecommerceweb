@@ -1,0 +1,33 @@
+
+.container{
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.upperText{
+  font-weight: bold;
+  color: dimgray;
+  margin-bottom: 60px;
+}
+.bottomText{
+  font-weight: bold;
+  font-size: 80px;
+  color: black;
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+.middleText{
+  font-family: "Jersey 15";
+  font-weight: 400;
+  font-size: 145px;
+  color: red;
+}
+.middleTextTwo{
+  font-family: "Jersey 15";
+  font-size:130px;
+  margin-top: 90px;
+  color: red;
+}
+a{
+  color: dimgray;
+  font-weight: bold;
+}

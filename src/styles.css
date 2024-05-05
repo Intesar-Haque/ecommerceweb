@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@fortawesome/fontawesome-free/css/all.css';
+@import "font.scss";
+html, body { height: 100%; }
+body { margin: 0; font-family: Outfit, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.homeRightSideCss{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+.homeRightSideCss1{
+  color: dimgray;
+  font-size: 44px;
+  font-weight: bold;
+  margin-bottom: 30px !important;
+}
+.homeRightSideCss2{
+  text-decoration: underline;
+  font-size:13px;
+  font-weight: bold;
+  color: dimgray;
+}
+
+.gray-text{
+  color:#484f56 !important;
+}

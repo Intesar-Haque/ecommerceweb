@@ -1,0 +1,15 @@
+.nav-item{
+  margin-left: 20px;
+font-size: 15px;
+}
+.abc {
+  position: fixed;
+  top: 0;
+  right: -450px; /* Start off-screen */
+  z-index: 1000;
+  transition: right 0.3s ease; /* Transition on left property */
+}
+
+.abc.active {
+  right: 0; /* Slide in from left when active */
+}

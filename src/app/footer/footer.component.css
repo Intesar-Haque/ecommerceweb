@@ -1,0 +1,13 @@
+.Container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 2fr; /* Explicitly define widths for each column */
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid lightgray;
+}
+
+.Container > div {
+  text-align: center;
+  padding: 30px;
+}

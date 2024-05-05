@@ -1,0 +1,11 @@
+@use '@angular/material' as mat;
+
+$typography: mat.define-typography-config($font-family: 'Outfit, "Helvetica Neue", Helvetica, Arial, sans-serif');
+
+@include mat.typography-hierarchy($typography);
+
+$app-theme: mat.define-light-theme((
+  typography: $typography
+));
+
+@include mat.all-component-themes($app-theme);

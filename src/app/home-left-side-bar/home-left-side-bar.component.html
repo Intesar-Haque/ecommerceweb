@@ -1,0 +1,27 @@
+
+
+  <div style=" margin-top: 70px; padding-right: 20px; padding-left: 20px;">
+    <div *ngIf="componentToShow === 'app-home-photo-gallery'" class="Container" style="margin-bottom: 30px; margin-left: 17px ; margin-right: 17px">
+      <div style="font-weight: bold; font-size: large; color:dimgray">JUST IN</div>
+      <div style="font-weight: bold; font-size: small; color:slategray">SHOP ALL</div>
+    </div>
+    <app-home-photo-gallery *ngIf="componentToShow === 'app-home-photo-gallery'" ></app-home-photo-gallery>
+    <app-home-alt *ngIf="componentToShow === 'app-home-alt'"></app-home-alt>
+  </div>
+ <div style="padding-right: 20px; padding-left: 20px;">
+   <h1 style="font-weight: bold; font-size:38px; margin-top: 30px; color: dimgray">GET 10% OFF</h1>
+   <p style="text-align: justify;margin-top: 20px;">Get 10% off your first purchase by joining our mailing list,
+     and receive some of the best deals possible.</p>
+
+   <form class="input-form mt-5">
+     <div class="inputfield">
+       <p>
+         <input type="email" style="border: none; outline: none" placeholder="email address">
+       </p>
+       <p>
+         <button type="submit"  style="border: none; background: none; font-weight: bold" >JOIN NOW</button>
+       </p>
+     </div>
+   </form>
+ </div>
+

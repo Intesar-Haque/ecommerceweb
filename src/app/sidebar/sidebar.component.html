@@ -1,0 +1,19 @@
+
+<div class="sidebar">
+
+  <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+    <img src="../../assets/womenDress/logo1.webp" alt="Logo" width="100" height="70" class="d-inline-block align-text-top">
+    <i (click)="handleClick()" class="fa-solid fa-arrow-left" style="color: black; padding-top: 5px; padding-right: 5px"></i>
+  </div>
+  <div class="container-fluid">
+
+    <ul class="sidebar-menu">
+      <li><a (click)="handleClick(); onItemClick('app-home-photo-gallery')"   routerLink="" style="font-weight: bold">HOME</a></li>
+      <li><a (click)="handleClick();onItemClick('app-home-alt')" routerLink="">HOME ALT</a></li>
+      <li><a (click)="handleClick(); onItemClick('app-store')"  routerLink="SecondNavbar">STORE</a></li>
+      <li><a (click)="handleClick(); onItemClick('app-new-arrivals')" routerLink="SecondNavbar">NEW ARRIVALS</a></li>
+      <li><a (click)="handleClick(); onItemClick('app-look-book')" routerLink="SecondNavbar">LOOKBOOK</a></li>
+      <li><a (click)="handleClick(); onItemClick('app-journal')" routerLink="SecondNavbar">JOURNAL</a></li>
+    </ul>
+  </div>
+</div>

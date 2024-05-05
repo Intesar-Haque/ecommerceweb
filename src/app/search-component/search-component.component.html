@@ -1,0 +1,31 @@
+<div class="searchbar">
+  <div style="display: flex; justify-content: space-between; margin-bottom: 15px; padding: 10px">
+    <p style="font-weight: bold">SEARCH DEMOS.REYTHEME.COM/TOKYO</p>
+    <i (click)="handleClick()" class="fa-solid fa-arrow-right" style="color: black; padding-top: 5px; padding-right: 5px"></i>
+  </div>
+  <form class="input-form mt-3">
+    <div class="inputfield">
+      <p>
+        <input type="email" [(ngModel)]="searchQuery" style="border: none" placeholder="TYPE TO SEARCH"  (ngModelChange)="filterCards()" >
+      </p>
+<!--      <p>-->
+<!--        <button style="opacity: 0" type="submit"  style="border: none; background: none; font-weight: bold" >*</button>-->
+<!--      </p>-->
+    </div>
+  </form>
+
+  <div class="row" >
+    <div *ngFor="let photoUrl of filteredCards " class="col-lg-6 col-md-4 col-sm-6">
+      <div class="card" style="border: none;">
+        <div style="max-height: 15rem; overflow: hidden;">
+          <img [src]="photoUrl.image" alt={{photoUrl}} class="card-img-top img-fluid" style="width: 100%; height: auto;">
+        </div>
+        <div class="card-body">
+          <h3 class="card-text" style="font-weight: bold;">Black Embroidered Mixed Viscose Taaga Dress</h3>
+          <p style="font-size: small; font-weight: bold; color: darkgray;"> {{photoUrl.title}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

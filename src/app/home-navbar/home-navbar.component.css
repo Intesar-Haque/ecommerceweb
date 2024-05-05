@@ -1,0 +1,11 @@
+.abc {
+  position: fixed;
+  top: 0;
+  left: -370px; /* Start off-screen */
+  z-index: 1000;
+  transition: left 0.3s ease; /* Transition on left property */
+}
+
+.abc.active {
+  left: 0; /* Slide in from left when active */
+}

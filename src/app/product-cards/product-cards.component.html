@@ -1,0 +1,14 @@
+
+<div class="row">
+  <div *ngFor="let photoUrl of photoUrls" class="col-lg-3 col-md-4 col-sm-6"  style="margin-top: 20px" >
+    <div class="card" style="border: none;">
+      <div style="max-height: 24rem; overflow: hidden;">
+        <img [src]="photoUrl" alt={{photoUrl}} class="card-img-top img-fluid" style="width: 100%; height: auto;">
+      </div>
+      <div class="card-body">
+        <h3 class="card-text" style="font-weight: bold;">Black Embroidered Mixed Viscose Taaga Dress</h3>
+        <p style="font-size: small; font-weight: bold; color: darkgray;">$ 50</p>
+      </div>
+    </div>
+  </div>
+</div>

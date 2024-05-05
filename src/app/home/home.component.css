@@ -1,0 +1,14 @@
+.parent {
+  height: 750px;
+  padding: 5px;
+}
+@media screen and (max-width: 991px) {
+  .parent{
+    flex-direction: column-reverse; /* Stack components vertically */
+  }
+  .parent > div {
+    flex: 1; /* Make both divs take up equal space */
+    width: 100%; /* Make both divs take up 100% width */
+
+  }
+}

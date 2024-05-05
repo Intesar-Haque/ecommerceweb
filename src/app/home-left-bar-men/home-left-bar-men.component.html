@@ -1,0 +1,33 @@
+<div class="box" (mouseenter)="toggleHover(true)" (mouseleave)="toggleHover(false)">
+  <div class="box_2">
+    <div class="homeRightSideCss">
+
+      <div *ngIf="!isHovered" class="z-3" >
+        <ul>
+          <li class="gray-text">
+            <p class="fs-1 fw-bold pb-2">Men's</p>
+            <p class="fs-6 small text-decoration-underline" >BROWSE ALL</p>
+          </li>
+        </ul>
+      </div>
+
+      <div *ngIf="isHovered">
+        <ul class="animated-list">
+          <li>Shirts</li>
+          <li>Fashion Hoodies & Sweatshirts</li>
+          <li>Jackets & Coats</li>
+          <li>Jeans</li>
+          <li>Pants</li>
+          <li>Suits & Sport Coats</li>
+          <li>Active</li>
+          <li class="mt-5">
+            <p class="fs-1 fw-bold pb-2">Men's</p>
+            <a class="fs-6 fw-medium" style="color:white; font-weight: bold;">BROWSE ALL</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+</div>

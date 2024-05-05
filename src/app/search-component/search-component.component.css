@@ -1,0 +1,22 @@
+.searchbar{
+  padding: 15px;
+  height: 100vh;
+  width:450px;
+  background-color: ghostwhite;
+  color:darkgray;
+}
+.inputfield{
+  display: flex;
+  padding: 8px;
+  justify-content: space-between;
+  border: none; /* Remove default border */
+  border-bottom: 2px solid lightgray; /* Add bottom border */
+  outline: none;
+}
+.inputfield p {
+  margin: 0; /* Remove default margin */
+}
+input{
+  background: none;
+  outline: none;
+}

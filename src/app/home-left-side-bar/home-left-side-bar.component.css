@@ -1,0 +1,13 @@
+.Container{
+  display: flex;
+  justify-content: space-between;
+}
+.inputfield{
+  display: flex;
+  border: 1px solid darkgray;
+  padding: 8px;
+  justify-content: space-between;
+}
+.inputfield p {
+  margin: 0; /* Remove default margin */
+}

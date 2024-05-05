@@ -1,0 +1,108 @@
+.lookbook{
+  color: black;
+  font-size: 80px;
+  font-weight: bold;
+  /*padding-top: 120px;*/
+  padding-left: 30px;
+}
+.innerDiv{
+  width: 550px;
+  height: 5px;
+  background: black;
+}
+.outerDiv{
+  align-items: center;
+  height: 200px;
+  padding-left: 50px;
+
+}
+.container{
+  height : 100%;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6,340px);
+  grid-template-areas:
+    ". a b b ."
+    ". c b b d"
+    "e e f g ."
+    "e e h . ."
+    ". i . j j"
+    ". . k j j";
+}
+.Div1{
+  grid-area: a;
+}
+.Div2{
+  grid-area: b;
+}
+.Div3{
+  grid-area:c;
+}
+.Div4{
+  grid-area: d;
+}
+.Div5{
+  grid-area: e;
+}
+.Div6{
+  grid-area: f;
+}
+.Div7{
+  grid-area: g;
+}
+.Div8{
+  grid-area: h;
+}
+.Div9{
+  grid-area: i;
+}
+.Div10{
+  grid-area: j;
+}
+.Div11{
+  grid-area: k;
+}
+
+.container img {
+  width: 100%; /* Make the image responsive */
+  height: 100%; /* Maintain aspect ratio */
+  display: block; /* Remove any default inline styles */
+  object-fit: cover;
+}
+.Div3 h1{
+  font-weight: bold;
+  font-size: 27px;
+  color: dimgray;
+}
+.Div3 p {
+  text-align: right;
+  padding-bottom: 70px;
+}
+.Div3 a{
+padding-left: 160px;
+  color: #333333;
+  font-weight: bold;
+}
+.Div3{
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Change to single column layout */
+    grid-template-rows: auto; /* Let rows adjust based on content */
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f"
+      "g"
+      "h"
+      "i"
+      "j"
+      "k";
+  }
+}
