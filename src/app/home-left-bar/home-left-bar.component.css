@@ -68,13 +68,27 @@ li{
 }
 
 .animated-list li:nth-child(1) { animation-delay: 0s; }
-.animated-list li:nth-child(2) { animation-delay: 0.2s; }
-.animated-list li:nth-child(3) { animation-delay: 0.4s; }
-.animated-list li:nth-child(4) { animation-delay: 0.6s; }
-.animated-list li:nth-child(5) { animation-delay: 0.8s; }
-.animated-list li:nth-child(6) { animation-delay: 1s; }
-.animated-list li:nth-child(7) { animation-delay: 1.2s; }
-.animated-list li:nth-child(8) { animation-delay: 1.4s; }
+.animated-list li:nth-child(2) { animation-delay: 0.08s; }
+.animated-list li:nth-child(3) { animation-delay: 0.16s; }
+.animated-list li:nth-child(4) { animation-delay: 0.24s; }
+.animated-list li:nth-child(5) { animation-delay: 0.32s; }
+.animated-list li:nth-child(6) { animation-delay: 0.4s; }
+.animated-list li:nth-child(7) { animation-delay: 0.48s; }
+.animated-list li:nth-child(8) { animation-delay: 0.56s; }
+.animated-list li:nth-child(9) { animation-delay: 0.64s; }
+.animated-list li:nth-child(10) { animation-delay: 0.72s; }
+.animated-list li:nth-child(11) { animation-delay: 0.8s; }
+.animated-list li:nth-child(12) { animation-delay: 0.88s; }
+.animated-list li:nth-child(13) { animation-delay: 0.96s; }
+.animated-list li:nth-child(14) { animation-delay: 1.04s; }
+.animated-list li:nth-child(15) { animation-delay: 1.12s; }
+.animated-list li:nth-child(16) { animation-delay: 1.2s; }
+.animated-list li:nth-child(17) { animation-delay: 1.28s; }
+.animated-list li:nth-child(18) { animation-delay: 1.36s; }
+.animated-list li:nth-child(19) { animation-delay: 1.44s; }
+.animated-list li:nth-child(20) { animation-delay: 1.52s; }
+
+
 
 
 

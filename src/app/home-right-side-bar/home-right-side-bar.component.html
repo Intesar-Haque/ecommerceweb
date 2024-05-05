@@ -1,7 +1,16 @@
-
-<div class="d-inline-flex w-100 justify-content-around "  >
-  <div class="col-4  " style="border-left: 1px solid lightgray;" app-home-left-bar-men></div>
-  <div class="col-4 " style="border-left: 1px solid lightgray"  app-home-left-bar-women></div>
-  <div class="col-4 " style="border-left: 1px solid lightgray" app-home-left-bar-kid></div>
+<div class="d-inline-flex w-100 justify-content-around"
+     [ngClass]="{'men':currentBar=='men','women':currentBar=='women','kids':currentBar=='kids'}">
+  <div class="col-4"
+       (mouseenter)="currentBar='men'" (mouseleave)="currentBar=''">
+    <app-home-left-bar [sectionName]="'Men\'s'" [browseAllLink]="''" [list]="mensList"></app-home-left-bar>
+  </div>
+  <div class="col-4"
+       (mouseenter)="currentBar='women'" (mouseleave)="currentBar=''">
+    <app-home-left-bar [sectionName]="'Women\'s'" [browseAllLink]="''" [list]="mensList"></app-home-left-bar>
+  </div>
+  <div class="col-4"
+       (mouseenter)="currentBar='kids'" (mouseleave)="currentBar=''">
+    <app-home-left-bar [sectionName]="'Kids\'s'" [browseAllLink]="''" [list]="mensList"></app-home-left-bar>
+  </div>
 </div>
 

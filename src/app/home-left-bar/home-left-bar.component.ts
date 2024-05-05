@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-home-left-bar',
@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './home-left-bar.component.css'
 })
 export class HomeLeftBarComponent {
+
+  @Input({required:true}) sectionName!:string;
+  @Input({required:true}) browseAllLink!:string;
+  @Input({required:true}) list!:any[];
+
   isHovered = false;
 
   toggleHover(state: boolean) {

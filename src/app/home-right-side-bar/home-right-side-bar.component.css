@@ -1,4 +1,16 @@
 .parent {
-  display: flex; /* Use Flexbox layout */
-  /*height: 650px;*/
+  display: flex;
+}
+
+.men{
+  background: url('../../assets/home/men.jpg') center center no-repeat;
+  background-size: cover;
+}
+.women{
+  background: url('../../assets/home/women.jpg') center center no-repeat;
+  background-size: cover;
+}
+.kids{
+  background: url('../../assets/home/kids.jpg') center center no-repeat;
+  background-size: cover;
 }
